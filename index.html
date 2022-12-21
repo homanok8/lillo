@@ -1,33 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Lillo</title>
    <link rel="stylesheet" href="css/common.css">
+   <link rel="stylesheet" href="css/main.css">
+   <script src="js/lib/jquery/jquery-3.6.0.min.js"></script>
+   <script>
+      $(function() {
+         var html = '';
+         for (var i = 0; i < 3; i++) {
+            for (var j = 1; j < 8; j++) {
+               html += '<li class="banner__item"><img class="banner__icon" src="images/icons/swiper_icon0' + j + '.png" alt=""></li>';
+            }
+         }
+         $('.banner__list').append(html);
+      });
+      
+   </script>
 </head>
 <body>
    <div id="wrap">
-      <header id="header" class="header">
-         <div class="header__inner">
-            <h1 class="logo">
-               <a href="#" class="logo__link">
-                  <img src="images/logo_header.png" alt="로고 메인으로 이동">
-               </a>
-            </h1>
-            <nav class="nav">
-               <ul class="nav__list">
-                  <li class="nav__item">
-                     <a class="nav__contact" href="#">문의하기</a>
-                  </li>
-                  <li class="nav__item">
-                     <a class="nav__start" href="#">시작하기</a>
-                  </li>
-               </ul>
-            </nav>
-         </div>
-      </header>
+      <main id="main">
+         <section class="banner">
+            <header id="header" class="header">
+               <div class="header__inner">
+                  <h1 class="logo">
+                     <a href="#" class="logo__link">
+                        <img src="images/logo_header.png" alt="로고 메인으로 이동">
+                     </a>
+                  </h1>
+                  <nav class="nav">
+                     <ul class="nav__list">
+                        <li class="nav__item">
+                           <a class="nav__contact" href="#">문의하기</a>
+                        </li>
+                        <li class="nav__item">
+                           <a class="nav__start" href="#">시작하기</a>
+                        </li>
+                     </ul>
+                  </nav>
+               </div>
+            </header>
+            <article class="empty"></article>
+            <article class="banner__con">
+               <h2 class="banner__tit">모바일 쇼핑몰을 APP으로</h2>
+               <h3 class="banner__tit banner__tit--gray">단, 3일이면 충분합니다.</h3>
+               <p class="banner__ps">Android와 iOS 앱을 함께서비스하세요.</p>
+               <a class="banner__link" href="#">시작하기</a>
+               <p class="banner__oth">모바일 쇼핑몰 주소만 알려주세요</p>
+            </article>
+            <article class="banner__sw">
+               <ul class="banner__list"></ul>
+            </article>
+         </section>
+         <section class="play">
+            <article class="title">
+               <h2 class="title__org">릴로 플레이 기능</h2>
+               <h2 class="title__blk">모바일 APP 서비스, 릴로 플레이와 함께하세요</h2>
+            </article>
+            <div class="gridbox">
+               <div class="gridbox__inner">
+                  <article class="alarm">
+                     <div class="play__con">
+                        <p class="play__ps">기분좋은 푸시 마케팅 릴로 연동</p>
+                        <dl class="play__dl">
+                           <dt class="play__dt">자동화 푸시 알림 기능</dt>
+                           <dd class="play__dd">릴로 연동 지원</dd>
+                        </dl>
+                        <a class="play__link" href="#">
+                           <img src="images/icons/exclude_icon.png" alt="">
+                        </a>
+                     </div>
+                  </article>
+                  <article class="app">
+                     <div class="play__con">
+                        <p class="play__ps">Android / iOS 앱 통합개발</p>
+                        <dl class="play__dl">
+                           <dt class="play__dt">Android & iOS</dt>
+                           <dd class="play__dd">통합 제작 진행</dd>
+                        </dl>
+                        <a class="play__link" href="#">
+                           <img src="images/icons/exclude_icon.png" alt="">
+                        </a>
+                     </div>
+                  </article>
+                  <article class="store">
+                     <div class="play__con">
+                        <p class="play__ps">타겟팅 그룹</p>
+                        <dl class="play__dl">
+                           <dt class="play__dt">Apple 앱스토어, Google Play</dt>
+                           <dd class="play__dd">스토어 등록 대행</dd>
+                        </dl>
+                        <a class="play__link" href="#">
+                           <img src="images/icons/exclude_icon.png" alt="">
+                        </a>
+                     </div>
+                  </article>
+                  <article class="update">
+                     <div class="play__con">
+                        <p class="play__ps">전환추적</p>
+                        <dl class="play__dl">
+                           <dt class="play__dt">정기 업데이트 지원</dt>
+                        </dl>
+                        <a class="play__link" href="#">
+                           <img src="images/icons/exclude_icon.png" alt="">
+                        </a>
+                     </div>
+                  </article>
+               </div>
+            </div>
+         </section>
+      </main>
    </div>
 </body>
 </html>
