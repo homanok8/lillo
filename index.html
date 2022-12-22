@@ -8,18 +8,7 @@
    <link rel="stylesheet" href="css/common.css">
    <link rel="stylesheet" href="css/main.css">
    <script src="js/lib/jquery/jquery-3.6.0.min.js"></script>
-   <script>
-      $(function() {
-         var html = '';
-         for (var i = 0; i < 3; i++) {
-            for (var j = 1; j < 8; j++) {
-               html += '<li class="banner__item"><img class="banner__icon" src="images/icons/swiper_icon0' + j + '.png" alt=""></li>';
-            }
-         }
-         $('.banner__list').append(html);
-      });
-      
-   </script>
+   <script src="js/main.js"></script>
 </head>
 <body>
    <div id="wrap">
@@ -86,6 +75,7 @@
                            <img src="images/icons/exclude_icon.png" alt="">
                         </a>
                      </div>
+                     <img class="app__bg" src="images/play_bg02.png" alt="">
                   </article>
                   <article class="store">
                      <div class="play__con">
@@ -98,6 +88,14 @@
                            <img src="images/icons/exclude_icon.png" alt="">
                         </a>
                      </div>
+                     <div class="store__bg">
+                        <div>
+                           <div>
+                              <img class="store-icon" src="images/icons/store_icon.png" alt="">
+                              <img class="google-icon" src="images/icons/google_icon.png" alt="">
+                           </div>
+                        </div>
+                     </div>
                   </article>
                   <article class="update">
                      <div class="play__con">
@@ -109,11 +107,299 @@
                            <img src="images/icons/exclude_icon.png" alt="">
                         </a>
                      </div>
+                     <div class="update__bg">
+                        <img class="update__icon01" src="images/icons/update_icon01.png" alt="">
+                        <img class="update__icon02" src="images/icons/update_icon02.png" alt="">
+                        <img class="update__icon03" src="images/icons/update_icon03.png" alt="">
+                     </div>
                   </article>
                </div>
             </div>
          </section>
+         <section class="sign">
+            <article class="title">
+               <h2 class="title__org">시작하기</h2>
+               <h2 class="title__blk">합리적인 가격에 릴로플레이 하이브리드앱을 만나보세요</h2>
+            </article>
+            <article class="sign__block">
+               <ul class="sign__list">
+                  <li class="sign__item">
+                     <h3 class="sign__tit">
+                        <span class="sign__tit-txt">FREE</span>
+                        <span class="sign__mark">무료</span>
+                     </h3>
+                     <span class="sign__desc">무료체험</span>
+                     <ul class="sign__sublist">
+                        <li class="sign__subitem">
+                           <img class="sign__icon" src="images/icons/check_icon.png" alt="">
+                           <span>릴로 6개월 이용권</span>
+                           <div class="sign__qus">
+                              <button class="sign__btn" type="button">
+                                 <img src="images/icons/qmark_icon.png" alt="이용권 상세설명 버튼">
+                              </button>
+                           </div>
+                        </li>
+                        <li class="sign__subitem">
+                           <img class="sign__icon" src="images/icons/check_icon_org.png" alt="">
+                           <span>Android 앱</span>
+                        </li>
+                        <li class="sign__subitem">
+                           <img class="sign__icon" src="images/icons/check_icon.png" alt="">
+                           <span>푸시알림 기능 릴로 연동</span>
+                        </li>
+                        <li class="sign__subitem">
+                           <img class="sign__icon" src="images/icons/check_icon.png" alt="">
+                           <span>위치서비스 이용기능 지원</span>
+                        </li>
+                        <li class="sign__subitem">
+                           <img class="sign__icon" src="images/icons/check_icon.png" alt="">
+                           <span>백버튼 종료기능(Android)</span>
+                        </li>
+                        <li class="sign__subitem">
+                           <img class="sign__icon" src="images/icons/check_icon.png" alt="">
+                           <span>url 예외처리 / 파일업로드 허용</span>
+                        </li>
+                        <li class="sign__subitem">
+                           <img class="sign__icon" src="images/icons/check_icon.png" alt="">
+                           <span>스토어 등록 진행</span>
+                        </li>
+                     </ul>
+                     <div class="sign__cost">￦ 0</div>
+                     <a class="sign__link" href="#">시작하기</a>
+                  </li>
+                  <li class="sign__item">
+                     <h3 class="sign__tit">
+                        <span class="sign__tit-txt">SINGLE</span>
+                     </h3>
+                     <span class="sign__desc">iOS 또는 Android</span>
+                     <ul class="sign__sublist">
+                        <li class="sign__subitem">
+                           <img class="sign__icon" src="images/icons/check_icon.png" alt="">
+                           <span>릴로 6개월 이용권</span>
+                           <div class="sign__qus">
+                              <button class="sign__btn" type="button">
+                                 <img src="images/icons/qmark_icon.png" alt="이용권 상세설명 버튼">
+                              </button>
+                           </div>
+                        </li>
+                        <li class="sign__subitem">
+                           <img class="sign__icon" src="images/icons/check_icon_org.png" alt="">
+                           <span>Android 앱</span>
+                        </li>
+                        <li class="sign__subitem">
+                           <img class="sign__icon" src="images/icons/check_icon_org.png" alt="">
+                           <span>푸시알림 기능 릴로 연동</span>
+                        </li>
+                        <li class="sign__subitem">
+                           <img class="sign__icon" src="images/icons/check_icon_org.png" alt="">
+                           <span>위치서비스 이용기능 지원</span>
+                        </li>
+                        <li class="sign__subitem">
+                           <img class="sign__icon" src="images/icons/check_icon_org.png" alt="">
+                           <span>백버튼 종료기능(Android)</span>
+                        </li>
+                        <li class="sign__subitem">
+                           <img class="sign__icon" src="images/icons/check_icon_org.png" alt="">
+                           <span>url 예외처리 / 파일업로드 허용</span>
+                        </li>
+                        <li class="sign__subitem">
+                           <img class="sign__icon" src="images/icons/check_icon_org.png" alt="">
+                           <span>스토어 등록 진행</span>
+                        </li>
+                     </ul>
+                     <div class="sign__cost">￦300,000<em class="sign__vat">VAT 별도</em></div>
+                     <a class="sign__link" href="#">시작하기</a>
+                  </li>
+                  <li class="sign__item sign__item--black">
+                     <h3 class="sign__tit">
+                        <span class="sign__tit-txt sign__tit-txt--white">DOUBLE</span>
+                        <span class="sign__mark">인기</span>
+                     </h3>
+                     <span class="sign__desc sign__desc--white">iOS + Android</span>
+                     <ul class="sign__sublist sign__sublist--white">
+                        <li class="sign__subitem">
+                           <img class="sign__icon" src="images/icons/check_icon_org.png" alt="">
+                           <span>릴로 6개월 이용권</span>
+                        </li>
+                        <li class="sign__subitem">
+                           <img class="sign__icon" src="images/icons/check_icon_org.png" alt="">
+                           <span>Android 앱</span>
+                        </li>
+                        <li class="sign__subitem">
+                           <img class="sign__icon" src="images/icons/check_icon_org.png" alt="">
+                           <span>푸시알림 기능 릴로 연동</span>
+                        </li>
+                        <li class="sign__subitem">
+                           <img class="sign__icon" src="images/icons/check_icon_org.png" alt="">
+                           <span>위치서비스 이용기능 지원</span>
+                        </li>
+                        <li class="sign__subitem">
+                           <img class="sign__icon" src="images/icons/check_icon_org.png" alt="">
+                           <span>백버튼 종료기능(Android)</span>
+                        </li>
+                        <li class="sign__subitem">
+                           <img class="sign__icon" src="images/icons/check_icon_org.png" alt="">
+                           <span>url 예외처리 / 파일업로드 허용</span>
+                        </li>
+                        <li class="sign__subitem">
+                           <img class="sign__icon" src="images/icons/check_icon_org.png" alt="">
+                           <span>스토어 등록 진행</span>
+                        </li>
+                     </ul>
+                     <div class="sign__cost sign__cost--white">￦500,000<em class="sign__vat">VAT 별도</em><span class="sign__under">￦700,000</span></div>
+                     <a class="sign__link sign__link--org" href="#">시작하기</a>
+                  </li>
+               </ul>
+            </article>
+         </section>
+         <section class="help">
+            <article class="title">
+               <h2 class="title__org">자주 묻는 질문</h2>
+               <h2 class="title__blk">도움이 필요하신가요?</h2>
+            </article>
+            <article class="help__block">
+               <ul class="help__list">
+                  <li class="help__item">
+                     <h3 class="help__tit">
+                        <div class="help__left">
+                           <span class="help__mark">Q</span>
+                           <span class="help__txt">결제 방법이 궁금해요</span>
+                        </div>
+                        <button class="help__btn" type="button">
+                           <img src="images/icons/arrow_icon.png" alt="답변 상세보기 버튼">
+                        </button>
+                     </h3>
+                     <div class="help__desc">
+                        <span class="help__tiner">
+                           노래하며 기관과 미인을 이성은 이것이다. 사랑의 간에 얼마나 따뜻한 것이다. 많이 인간이 새가 석가는 열락의 이상 크고 말이다. 위하여 노래하며 청춘을 청춘은 뜨거운지라, 이는 반짝이는 뿐이다. 만천하의 안고, 바로
+                           착목한는 말이다. 봄날의 보이는 이상은 같은 뜨고, 착목한는 때문이다. 너의 그들의 청춘의 대고, 쓸쓸하랴? 피가 든 물방아 보라. 역사를 살았으며, 따뜻한 길을 보라. 오아이스도 원질이 인생을 창공에 우리 뭇 끓는
+                           품었기 열락의 것이다. 품으며, 두기 꽃이 목숨이 것이다.
+                        </span>
+                     </div>
+                  </li>
+                  <li class="help__item">
+                     <h3 class="help__tit">
+                        <div class="help__left">
+                           <span class="help__mark">Q</span>
+                           <span class="help__txt">베이직 멤버십과 플러스 멤버십은 무슨 차이 인가요?</span>
+                        </div>
+                        <button class="help__btn" type="button">
+                           <img src="images/icons/arrow_icon.png" alt="답변 상세보기 버튼">
+                        </button>
+                     </h3>
+                     <div class="help__desc">
+                        <span class="help__tiner">
+                           노래하며 기관과 미인을 이성은 이것이다. 사랑의 간에 얼마나 따뜻한 것이다. 많이 인간이 새가 석가는 열락의 이상 크고 말이다. 위하여 노래하며 청춘을 청춘은 뜨거운지라, 이는 반짝이는 뿐이다. 만천하의 안고, 바로
+                           착목한는 말이다. 봄날의 보이는 이상은 같은 뜨고, 착목한는 때문이다. 너의 그들의 청춘의 대고, 쓸쓸하랴? 피가 든 물방아 보라. 역사를 살았으며, 따뜻한 길을 보라. 오아이스도 원질이 인생을 창공에 우리 뭇 끓는
+                           품었기 열락의 것이다. 품으며, 두기 꽃이 목숨이 것이다.
+                        </span>
+                     </div>
+                  </li>
+                  <li class="help__item">
+                     <h3 class="help__tit">
+                        <div class="help__left">
+                           <span class="help__mark">Q</span>
+                           <span class="help__txt">활성 회원수란 무엇인가요?</span>
+                        </div>
+                        <button class="help__btn" type="button">
+                           <img src="images/icons/arrow_icon.png" alt="답변 상세보기 버튼">
+                        </button>
+                     </h3>
+                     <div class="help__desc">
+                        <span class="help__tiner">
+                           노래하며 기관과 미인을 이성은 이것이다. 사랑의 간에 얼마나 따뜻한 것이다. 많이 인간이 새가 석가는 열락의 이상 크고 말이다. 위하여 노래하며 청춘을 청춘은 뜨거운지라, 이는 반짝이는 뿐이다. 만천하의 안고, 바로
+                           착목한는 말이다. 봄날의 보이는 이상은 같은 뜨고, 착목한는 때문이다. 너의 그들의 청춘의 대고, 쓸쓸하랴? 피가 든 물방아 보라. 역사를 살았으며, 따뜻한 길을 보라. 오아이스도 원질이 인생을 창공에 우리 뭇 끓는
+                           품었기 열락의 것이다. 품으며, 두기 꽃이 목숨이 것이다.
+                        </span>
+                     </div>
+                  </li>
+                  <li class="help__item">
+                     <h3 class="help__tit">
+                        <div class="help__left">
+                           <span class="help__mark">Q</span>
+                           <span class="help__txt">엔터프라이즈가 아니면 맞춤형 추적코드를 사용 못하는 건가요?</span>
+                        </div>
+                        <button class="help__btn" type="button">
+                           <img src="images/icons/arrow_icon.png" alt="답변 상세보기 버튼">
+                        </button>
+                     </h3>
+                     <div class="help__desc">
+                        <span class="help__tiner">
+                           노래하며 기관과 미인을 이성은 이것이다. 사랑의 간에 얼마나 따뜻한 것이다. 많이 인간이 새가 석가는 열락의 이상 크고 말이다. 위하여 노래하며 청춘을 청춘은 뜨거운지라, 이는 반짝이는 뿐이다. 만천하의 안고, 바로
+                           착목한는 말이다. 봄날의 보이는 이상은 같은 뜨고, 착목한는 때문이다. 너의 그들의 청춘의 대고, 쓸쓸하랴? 피가 든 물방아 보라. 역사를 살았으며, 따뜻한 길을 보라. 오아이스도 원질이 인생을 창공에 우리 뭇 끓는
+                           품었기 열락의 것이다. 품으며, 두기 꽃이 목숨이 것이다.
+                        </span>
+                     </div>
+                  </li>
+                  <li class="help__item">
+                     <h3 class="help__tit">
+                        <div class="help__left">
+                           <span class="help__mark">Q</span>
+                           <span class="help__txt">베이직 멤버십과 플러스 멤버십은 무슨 차이 인가요?</span>
+                        </div>
+                        <button class="help__btn" type="button">
+                           <img src="images/icons/arrow_icon.png" alt="답변 상세보기 버튼">
+                        </button>
+                     </h3>
+                     <div class="help__desc">
+                        <span class="help__tiner">
+                           노래하며 기관과 미인을 이성은 이것이다. 사랑의 간에 얼마나 따뜻한 것이다. 많이 인간이 새가 석가는 열락의 이상 크고 말이다. 위하여 노래하며 청춘을 청춘은 뜨거운지라, 이는 반짝이는 뿐이다. 만천하의 안고, 바로
+                           착목한는 말이다. 봄날의 보이는 이상은 같은 뜨고, 착목한는 때문이다. 너의 그들의 청춘의 대고, 쓸쓸하랴? 피가 든 물방아 보라. 역사를 살았으며, 따뜻한 길을 보라. 오아이스도 원질이 인생을 창공에 우리 뭇 끓는
+                           품었기 열락의 것이다. 품으며, 두기 꽃이 목숨이 것이다.
+                        </span>
+                     </div>
+                  </li>
+               </ul>
+               <div class="help__more">
+                  <a class="help__more-btn" href="#">
+                     <i></i>
+                     <i></i>
+                     <i></i>
+                  </a>
+               </div>
+            </article>
+         </section>
       </main>
+      <footer id="footer" class="footer">
+         <div class="footer__inner">
+            <article class="footer__top">
+               <h2 class="footer__logo">
+                  <a href="#">
+                     <img src="images/logo_footer.png" alt="">
+                  </a>
+               </h2>
+               <ul class="footer__list">
+                  <li class="footer__item">
+                     <a class="footer__link" href="#">기능소개</a>
+                  </li>
+                  <li class="footer__item">
+                     <a class="footer__link" href="#">멤버십</a>
+                  </li>
+                  <li class="footer__item">
+                     <a class="footer__link" href="#">블로그</a>
+                  </li>
+                  <li class="footer__item">
+                     <a class="footer__link" href="#">도움말</a>
+                  </li>
+               </ul>
+            </article>
+            <article class="address">
+               <p class="address__txt">주식회사 릴로코퍼레이션 | 대표자 허정호 | 서울특별시 구로구 디지털로 300, 12F | 사업자등록번호 : 280-86-02909</p>
+               <ul class="gnb">
+                  <li class="gnb__item">
+                     <a class="gnb__link" href="#">회사소개</a>
+                  </li>
+                  <li class="gnb__item">
+                     <a class="gnb__link" href="#">개인정보처리방침</a>
+                  </li>
+                  <li class="gnb__item">
+                     <a class="gnb__link" href="#">이용약관</a>
+                  </li>
+               </ul>
+            </article>
+            <p class="copyright">(c) 2022 LILLO. ALL RIGHTS RESERVED.</p>
+         </div>
+      </footer>
    </div>
 </body>
 </html>
