@@ -18,13 +18,13 @@
                <div class="header__inner">
                   <h1 class="logo">
                      <a href="#" class="logo__link">
-                        <img src="images/logo_header.png" alt="로고 메인으로 이동">
+                        <img class="logo__img" src="images/logo_header.png" alt="로고 메인으로 이동">
                      </a>
                   </h1>
                   <nav class="nav">
                      <ul class="nav__list">
                         <li class="nav__item">
-                           <a class="nav__contact" href="#">문의하기</a>
+                           <a class="nav__contact inquiry__btn" href="#">문의하기</a>
                         </li>
                         <li class="nav__item">
                            <a class="nav__start" href="#">시작하기</a>
@@ -42,13 +42,14 @@
                <p class="banner__oth">모바일 쇼핑몰 주소만 알려주세요</p>
             </article>
             <article class="banner__sw">
-               <ul class="banner__list"></ul>
+               <ul class="banner__list banner__list--left"></ul>
+               <ul class="banner__list banner__list--right"></ul>
             </article>
          </section>
          <section class="play">
             <article class="title">
                <h2 class="title__org">릴로 플레이 기능</h2>
-               <h2 class="title__blk">모바일 APP 서비스, 릴로 플레이와 함께하세요</h2>
+               <h2 class="title__blk">모바일 APP 서비스,<em></em> 릴로 플레이와 함께하세요</h2>
             </article>
             <div class="gridbox">
                <div class="gridbox__inner">
@@ -128,7 +129,7 @@
                         <span class="sign__tit-txt">FREE</span>
                         <span class="sign__mark">무료</span>
                      </h3>
-                     <span class="sign__desc">무료체험</span>
+                     <span class="sign__desc sign__desc--op08">무료체험</span>
                      <ul class="sign__sublist">
                         <li class="sign__subitem">
                            <img class="sign__icon" src="images/icons/check_icon.png" alt="">
@@ -220,6 +221,11 @@
                         <li class="sign__subitem">
                            <img class="sign__icon" src="images/icons/check_icon_org.png" alt="">
                            <span>릴로 6개월 이용권</span>
+                           <div class="sign__qus">
+                              <button class="sign__btn" type="button">
+                                 <img src="images/icons/qmark_icon.png" alt="이용권 상세설명 버튼">
+                              </button>
+                           </div>
                         </li>
                         <li class="sign__subitem">
                            <img class="sign__icon" src="images/icons/check_icon_org.png" alt="">
@@ -366,6 +372,7 @@
                <h2 class="footer__logo">
                   <a href="#">
                      <img src="images/logo_footer.png" alt="">
+                     <img class="footer__logo-mob" src="images/icons/logo_icon.png" alt="">
                   </a>
                </h2>
                <ul class="footer__list">
@@ -384,7 +391,7 @@
                </ul>
             </article>
             <article class="address">
-               <p class="address__txt">주식회사 릴로코퍼레이션 | 대표자 허정호 | 서울특별시 구로구 디지털로 300, 12F | 사업자등록번호 : 280-86-02909</p>
+               <p class="address__txt">주식회사 릴로코퍼레이션 | 대표자 허정호 <i>|</i><em></em> 서울특별시 구로구 디지털로 300, 12F <i>|</i><em></em> 사업자등록번호 : 280-86-02909</p>
                <ul class="gnb">
                   <li class="gnb__item">
                      <a class="gnb__link" href="#">회사소개</a>
@@ -400,6 +407,194 @@
             <p class="copyright">(c) 2022 LILLO. ALL RIGHTS RESERVED.</p>
          </div>
       </footer>
+   </div>
+   <div class="popup" id="popup">
+      <section class="produce">
+         <div class="produce__inner">
+            <h3 class="produce__tit">
+               <span>💬 <em>Lillo Play 하이브리드 </em>앱 제작문의</span>
+               <button class="popup__close" type="button">
+                  <img src="images/icons/close_icon.png" alt="팝업 닫기 버튼">
+               </button>
+            </h3>
+            <form action="">
+               <div class="info">
+                  <article class="info__block">
+                     <h4 class="info__tit">회사 정보</h4>
+                     <ul class="info__list">
+                        <li class="info__item">
+                           <label class="info__label" for="companyName">회사명</label>
+                           <input class="info__in" id="companyName" type="text" placeholder="회사명을 입력해주세요">
+                        </li>
+                        <li class="info__item">
+                           <label class="info__label" for="agentName">대표자명</label>
+                           <input class="info__in" id="agentName" type="text" placeholder="대표자명을 입력해주세요">
+                        </li>
+                        <li class="info__item">
+                           <label class="info__label" for="businessNum">사업자번호</label>
+                           <input class="info__in" id="businessNum" type="text" placeholder="사업자번호를 입력해주세요">
+                        </li>
+                        <li class="info__item">
+                           <label class="info__label" for="corporateNum">법인번호</label>
+                           <input class="info__in" id="corporateNum" type="text" placeholder="법인번호를 입력해주세요">
+                        </li>
+                     </ul>
+                  </article>
+                  <article class="info__block">
+                     <h4 class="info__tit">담당자 정보</h4>
+                     <ul class="info__list">
+                        <li class="info__item">
+                           <label class="info__label" for="chargeName">담당자명</label>
+                           <input class="info__in" id="chargeName" type="text" placeholder="담당자명을 입력해주세요">
+                        </li>
+                        <li class="info__item">
+                           <label class="info__label" for="phone">연락처</label>
+                           <input class="info__in" id="phone" type="text" placeholder="연락처를 입력해주세요">
+                        </li>
+                        <li class="info__item">
+                           <label class="info__label" for="email">이메일</label>
+                           <input class="info__in" id="email" type="text" placeholder="이메일을 입력해주세요">
+                        </li>
+                     </ul>
+                  </article>
+                  <article class="info__block">
+                     <h4 class="info__tit">앱 제작 정보</h4>
+                     <ul class="info__list">
+                        <li class="info__item">
+                           <label class="info__label" for="appName">앱 이름</label>
+                           <input class="info__in" id="appName" type="text" placeholder="앱 이름을 입력해주세요">
+                        </li>
+                        <li class="info__item">
+                           <label class="info__label" for="webUrl">모바일 웹 url</label>
+                           <input class="info__in" id="webUrl" type="text" placeholder="모바일 웹 url을 입력해주세요">
+                        </li>
+                        <li class="info__item">
+                           <label class="info__label" for="subhead">부제목 및 간단 설명</label>
+                           <textarea class="info__textarea" name="" id="subhead" cols="" rows=""  placeholder="부제목 및 간단 설명을 입력해주세요"></textarea>
+                        </li>
+                        <li class="info__item">
+                           <label class="info__label" for="subhead">앱 설명</label>
+                           <textarea class="info__textarea" name="" id="subhead" cols="" rows=""  placeholder="앱 설명을 입력해주세요"></textarea>
+                        </li>
+                        <li class="info__item">
+                           <span class="info__label">앱 아이콘</span>
+                           <div class="info__file">
+                              <div class="info__left">
+                                 <label class="info__file-btn" for="appIcon">
+                                    <img class="info__file-icon" src="images/icons/filebtn_icon.png" alt="이미지 첨부 버튼">
+                                    <span>이미지 첨부</span>
+                                 </label>
+                                 <input id="appIcon" type="file" accept=".jpeg, .png" onchange="readURL(this);">
+                                 <span class="info__txt">PNG 또는 JPEG, 최대 1MB, 512px X 512px</span>
+                              </div>
+                              <label class="info__right" for="appIcon">
+                                 <img class="info__file-img" id="uploadIcon" src="images/icons/file_icon.png" alt="이미지 첨부 버튼">
+                              </label>
+                           </div>
+                        </li>
+                        <li class="info__item">
+                           <span class="info__label">스플래시 이미지</span>
+                           <div class="info__file">
+                              <div class="info__left">
+                                 <label class="info__file-btn" for="splashImg">
+                                    <img class="info__file-icon" src="images/icons/filebtn_icon.png" alt="이미지 첨부 버튼">
+                                    <span>이미지 첨부</span>
+                                 </label>
+                                 <input id="splashImg" type="file" accept=".jpeg, .png" onchange="readSplashURL(this);">
+                                 <span class="info__txt">PNG 또는 JPEG, 최대 1MB, 512px X 512px</span>
+                              </div>
+                              <label class="info__right" for="splashImg">
+                                 <img class="info__file-img" id="splashImgFile" src="images/icons/file_icon.png" alt="이미지 첨부 버튼">
+                              </label>
+                           </div>
+                        </li>
+                        <li class="info__item">
+                           <label class="info__label" for="keyword">키워드</label>
+                           <select class="info__select" name="" id="keyword">
+                              <option value="">키워드를 선택해주세요</option>
+                              <option value="">키워드를 선택해주세요</option>
+                              <option value="">키워드를 선택해주세요</option>
+                              <option value="">키워드를 선택해주세요</option>
+                           </select>
+                        </li>
+                        <li class="info__item">
+                           <label class="info__label" for="keyword">프로모션 텍스트</label>
+                           <select class="info__select" name="" id="keyword">
+                              <option value="">프로모션 텍스트를 선택해주세요</option>
+                              <option value="">프로모션 텍스트를 선택해주세요</option>
+                              <option value="">프로모션 텍스트를 선택해주세요</option>
+                           </select>
+                        </li>
+                     </ul>
+                  </article>
+                  <article class="info__block">
+                     <h4 class="info__tit"><label for="account">계정 정보</label></h4>
+                     <ul class="info__list">
+                        <li class="info__item">
+                           <select class="info__select" name="" id="account">
+                              <option value="">계정정보를 선택해주세요</option>
+                              <option value="">계정정보를 선택해주세요</option>
+                              <option value="">계정정보를 선택해주세요</option>
+                           </select>
+                        </li>
+                     </ul>
+                  </article>
+                  <article class="info__block">
+                     <h4 class="info__tit"><label for="accountGoogle">Google Play Console 계정이 있으신가요?</label></h4>
+                     <ul class="info__list">
+                        <li class="info__item">
+                           <select class="info__select info__select--blk" name="" id="accountGoogle">
+                              <option value="">예, 있습니다.</option>
+                              <option value="">아니오</option>
+                           </select>
+                        </li>
+                     </ul>
+                  </article>
+                  <article class="info__block">
+                     <h4 class="info__tit"><label for="accountApple">Google Play Console 계정이 있으신가요?</label></h4>
+                     <ul class="info__list">
+                        <li class="info__item">
+                           <select class="info__select info__select--blk" name="" id="accountApple">
+                              <option value="">예, 있습니다.</option>
+                              <option value="">아니오</option>
+                           </select>
+                        </li>
+                     </ul>
+                  </article>
+                  <button class="info__submit">전송하기</button>
+               </div>
+            </form>
+         </div>
+      </section>
+   </div>
+   <div class="popup2" id="popup2">
+      <section class="detail">
+         <div class="detail__inner">
+            <div class="detail__top">
+               <button class="detail__close" type="button">
+                  <img src="images/icons/close_blk_icon.png" alt="팝업 닫기 버튼">
+               </button>
+            </div>
+            <h3 class="detail__tit">
+               <dl class="detail__dl">
+                  <dt class="detail__dt">스텝바이스텝!</dt>
+                  <dd class="detail__dd">차근차근 완성하는 <span>푸시알림</span></dd>
+               </dl>
+               <img class="detail__icon" src="images/icons/alarm_icon.png" alt="">
+            </h3>
+            <figure class="detail__fig">
+               <img class="detail__img" src="images/example_img.png" alt="">
+               <figcaption class="detail__figcap">
+                  릴로의 푸시 알림 캠페인은 사용자가 쉽고 빠르게 푸시 알림 전송을 설정할 수 있도록 도와줍니다. 캠페인 설정을 위해서는 타겟팅, 콘텐츠 입력, 발송 스케줄 설정의 3가지 스텝이 필요합니다. 첫 번째, 타겟팅은 푸시
+                  알림을 보내고자 하는 고객의 명단을 설정하는 기능입니다. 앱을 다운로드한 모든 이에게 보낼 수도 있지만, 더욱 효과적인 푸시 알림 마케팅을 위해 ‘어떤 고객’에게 푸시 알림을 보낼지 설정할 수 있습니다. 두 번째,
+                  콘텐츠 입력은 전송할 푸시 알림의 내용입니다. 어떤 제목으로 무슨 내용의 푸시 알림을 전송할지, 푸시 알림이 연결될 사이트 주소나 이미지를 포함 여부 등을 설정할 수 있습니다. 아이디어가 없어도 걱정할 필요 없어요.
+                  릴로는 테마별 추천 문구를 알려드리니까요. 마지막으로 발송 스케줄 설정은 작성한 캠페인을 발송할 시기를 말합니다. 지금 당장 전송할 수도 있지만 1시간 후, 다음 날, 다음 주에 보내고 싶을 수도 있겠죠. 그럴
+                  필요가 있을 수도 있고요.
+                  장황하게 보여도 걱정하지 마세요. 금세 익숙해질 수 있도록 릴로가 도와드릴게요. 차근차근 한 단계씩 밟아나가다 보면 어느새 완성된 캠페인을 확인할 수 있을 거예요.
+               </figcaption>
+            </figure>
+         </div>
+      </section>
    </div>
 </body>
 </html>
