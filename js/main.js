@@ -14,8 +14,8 @@ $(function() {
    $('.banner__list--left').append(html);
    $('.banner__list--right').append(html2);
 
-   $('.help__btn').click(function () {
-      if ($(this).hasClass('open')) {
+   $('.help__tit').click(function () {
+      if ($(this).find('.help__btn').hasClass('open')) {
          $('.help__btn').removeClass('open');
          $('.help__txt').removeClass('on');
          $('.help__desc').stop().slideUp();
@@ -23,9 +23,9 @@ $(function() {
          $('.help__btn').removeClass('open');
          $('.help__txt').removeClass('on');
          $('.help__desc').stop().slideUp();
-         $(this).addClass('open');
-         $(this).prev().find('.help__txt').stop().addClass('on');
-         $(this).parents('.help__tit').next().stop().slideDown();
+         $(this).find('.help__btn').addClass('open');
+         $(this).find('.help__txt').stop().addClass('on');
+         $(this).next().stop().slideDown();
       }
    });
 
